@@ -25,3 +25,8 @@ def single_val_cols_to_dict(df_json):
 # save our file (make sure our file permissions are "wb",
 # which will let us _w_rite a _b_inary file)
 pickle.dump(single_val_cols_to_dict, open("single_vals.pkl", "wb"))
+
+time = '2019-04-02 11:00:00'  # arbitrary time to start the datetime index
+df = pd.DataFrame(index=pd.date_range(time, periods=3, freq='1H'),
+             columns=['col1', 'col2', 'col3'], data=[[1.0, 2.0, 3.0], [1.0, 4.0, 3.0], [1.0, 6.0, 3.0]])
+print(df.to_json())
