@@ -2,18 +2,12 @@ import pandas as pd
 import pickle
 
 
-def single_val_cols_to_dict(df, single_value_dict=None, dict_name=None, count_na=True):
+def single_val_cols_to_dict(df_json):
 
-    if single_value_dict is None:
-        single_value_dict = {}
+    single_value_dict = {}
+    count_na = True  # in original function was a parameter...keeping in case of future parameterization
 
-    # if dict_name is set, store the dict_name in the index.name attribute of df
-    # this functionality is to allow for easier reference to the dict from an attribute of the df
-    if dict_name is not None:
-        # if df.index.name has a value, store it in the single_value_dict under 'index.name'
-        if df.index.name is not None:
-            single_value_dict['index.name'] = df.index.name
-        df.index.name = dict_name
+    df = pd.read_json(df_json)
 
     # go through columns, if only 1 unique value, store in single_value_dict with column_name:single_value pair
     for col in df.columns:
