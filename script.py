@@ -8,4 +8,5 @@ app=Flask(__name__)
 @app.route('/extractsinglevalues', methods=['POST'])
 def single_val_output():
     json_df = request.json
-    return run_single_val(json_df)
+    return(json.dumps(json_df))
+    #return run_single_val(json_df)
