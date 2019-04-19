@@ -19,6 +19,7 @@ def single_val_cols_to_dict(df_json):
             else:
                 single_value_dict[col] = NaN
 
+    single_value_dict = {'test_key': 'test_val'}
     return json.dumps(single_value_dict)
 
 
