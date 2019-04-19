@@ -1,9 +1,11 @@
-from flask import Flask
+from flask import Flask, request
 from serve import run_single_val
+import json
 
 app=Flask(__name__)
 
 # Define our "extractsinglevalues" end point
 @app.route('/extractsinglevalues', methods=['POST'])
-def single_val_output(json_df):
-    run_single_val(json_df)
+def single_val_output():
+    json_df = request.json
+    return run_single_val(json_df)
