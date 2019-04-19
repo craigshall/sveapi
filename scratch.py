@@ -1,4 +1,5 @@
 import pandas as pd
+import json
 import pickle
 
 
@@ -18,7 +19,7 @@ def single_val_cols_to_dict(df_json):
             else:
                 single_value_dict[col] = NaN
 
-    return single_value_dict
+    return json.dumps(single_value_dict)
 
 
 # save our file (make sure our file permissions are "wb",

@@ -2,7 +2,7 @@ openapi: "3.0.0"
 
 info:
   title: "Single value extractor"
-  description: "API that accepts a csv?, array?, something? and returns key:value pairs for any columns that only have a single value."
+  description: "API that accepts a json string representation of a pandas df and returns key:value pairs for any columns that only have a single value."
   version: "1.0"
 
 paths:
@@ -11,7 +11,7 @@ paths:
       description: "Extract single values"
 
       requestBody:
-        description: "Json with single field containing name of csv file or perhaps the array of values"
+        description: "Json with single field containing json string representation of pandas df"
         required: true
         content:
           application/json: {}
