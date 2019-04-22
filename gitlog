@@ -1,0 +1,190 @@
+commit 29a85e6fef078459ead26b988156d1f5828f8a00
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Mon Apr 22 16:40:17 2019 -0700
+
+    version of scratch.py to create most up to date pickle file
+
+commit 1631fc284470ebb90aa234633c79384fbef0d15d
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Mon Apr 22 16:00:01 2019 -0700
+
+    never pushed last binary (pickle) file reboot to master, so it didn't take; also fixed if statement and issue with JSON serializing column names
+
+commit 5f7dc61026b1af830b95bdc30d9b674f63637a8c
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Mon Apr 22 15:58:05 2019 -0700
+
+    change to pickle file fixing JSON issues with column names and if statement evaluation
+
+commit 22c71b6e53250d4acc9dcd0b7cd6b30befb7055d
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Mon Apr 22 15:49:41 2019 -0700
+
+    return to running off pickled function, now that pickled function runs correctly
+
+commit c531b782028e5f8c96e05463dbaecfabcff40a29
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Mon Apr 22 15:46:34 2019 -0700
+
+    must remove binary to create new one in repo
+
+commit b1debda7eaa8a11689a2befd78266e7e92290dc5
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Mon Apr 22 15:41:56 2019 -0700
+
+    convert ints in dummy df to str for JSON serialization
+
+commit 413da701bdc50f21381f3be7951a40f28b7eb894
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Mon Apr 22 15:30:50 2019 -0700
+
+    removed call to bool in serve.py; added notbook/ to .gitignore
+
+commit d9d53bbb6cb2fd2bb5c64d5b7b269b869fd90a90
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 16:51:54 2019 -0700
+
+    add logic to check if return dict is empty and always return something; updated scratch and api_test to run tests on modified serve.py
+
+commit 026a6302d99ac59f76040e094f551c407227a1cf
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 16:41:56 2019 -0700
+
+    returning dummy dict test
+
+commit feb0fc18b9d29820c833c65ca49b24f8f7b61240
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 16:33:47 2019 -0700
+
+    swap explicit function for pickled function
+
+commit ebbd25d0f318583f9ee47d771ebbeae7ff15c572
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 16:29:09 2019 -0700
+
+    working with simple return, editted to process data
+
+commit 4173170a7d2f5d176000aa20035555c36ad603ea
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 16:14:52 2019 -0700
+
+    testing simple return of submitted json
+
+commit 958ff0f3bd53c0f532b9c689a8aa0e059e8871fa
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 15:28:17 2019 -0700
+
+    altered handling of input json
+
+commit 8b8afe4afc7cc21d2a99cdd2a003439045da94ca
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 15:17:02 2019 -0700
+
+    added methods=['POST'] parameter to flask decorator call
+
+commit f2496149b023ec369731179c7253d026b75e95bc
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 13:43:54 2019 -0700
+
+    commiting new pickle after deletion. this one returns a json version of dict
+
+commit 10acb1db1106e9d013b15071e276c0e89341996c
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 13:42:54 2019 -0700
+
+    edited to be returning a json string representation of the dict; also need to delete pickle each time in order to update
+
+commit 039a39bfede493c4abec906d828a34ccaf002a9a
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 13:12:59 2019 -0700
+
+    added in new pickle file after switching to json serialized dataframe
+
+commit 619107ccda7e7c56aab2b169b677aed79d4daae7
+Author: craigshall <craigsh@gmail.com>
+Date:   Fri Apr 19 13:11:38 2019 -0700
+
+    Delete single_vals.pkl
+
+commit 5f8e49f9a5d6692ab1f28891f3aec1b52816e9a9
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Fri Apr 19 13:07:18 2019 -0700
+
+    update to run against json serialized dataframe
+
+commit 075270d93d3cfa3b054e3b1f1670613f49c18d45
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Thu Apr 18 17:03:13 2019 -0700
+
+    made api_test.py and script.py conform with sveapi.yaml directory name: extractsinglevalues
+
+commit 1b938e183ddd579af5462c9ee83d65982c11e10c
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Thu Apr 18 16:58:17 2019 -0700
+
+    added weather_test.csv test file to repo; created api_test.py to load test file and test api
+
+commit 51bd79934eb378a2073662d4e27f82c0046aa1c7
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Thu Apr 18 16:37:11 2019 -0700
+
+    edited serve.py to load pickle and run it; edited script.py to call run_single_val from serve.py
+
+commit 16a603e947d0b28c749442ff1a4cf0c857d6cb37
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Thu Apr 18 16:23:51 2019 -0700
+
+    modified scratch.py to create pickle of single_val_cols_to_dict; added single_vals.pkl to repo
+
+commit 0e0cd024a6564b6e09c801732a49d4b503347452
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Thu Apr 18 16:06:11 2019 -0700
+
+    created pycharm venv, .gitignore, and scratch.py; added pandas to requirements.txt
+
+commit 455feab49391b83598508999bc88a03df560b616
+Merge: efcf5bc ce5ab51
+Author: craigshall <craigsh@gmail.com>
+Date:   Thu Apr 18 15:46:34 2019 -0700
+
+    Merge pull request #1 from craigshall/script_mod
+    
+    Update script.py
+
+commit ce5ab511702a05ff126e2d9df82ce8877a7c8d98
+Author: craigshall <craigsh@gmail.com>
+Date:   Thu Apr 18 15:44:37 2019 -0700
+
+    Update script.py
+
+commit 06109033b58ec4383c5a14bb2a1dfbf85cb1005a
+Author: craigshall <craigsh@gmail.com>
+Date:   Thu Apr 18 15:33:14 2019 -0700
+
+    Update script.py
+
+commit efcf5bc6721f426f1bf47f70ca0030c4e5df1f2d
+Author: craigshall <craigsh@gmail.com>
+Date:   Thu Apr 18 14:26:45 2019 -0700
+
+    Update README.md
+    
+    Added links to kaggle notebooks and github repo
+
+commit 7f185197e156fa3da440799335914d1a3d063e73
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Thu Apr 18 14:14:11 2019 -0700
+
+    added files from rctatman repo
+
+commit 140a92de97ae34b4526babfc0e5b787861e9d921
+Author: Craig Hall <craigsh@gmail.com>
+Date:   Thu Apr 18 08:45:55 2019 -0700
+
+    add sveapi.yaml to repo
+
+commit 53bace932a28d60a7d8355521b77d25a91a6dc6c
+Author: craigshall <craigsh@gmail.com>
+Date:   Thu Apr 18 08:43:40 2019 -0700
+
+    Initial commit
