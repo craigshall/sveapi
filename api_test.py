@@ -8,5 +8,5 @@ import pandas as pd
 time = '2019-04-02 11:00:00'  # arbitrary time to start the datetime index
 df = pd.DataFrame(index=pd.date_range(time, periods=3, freq='1H'),
                   columns=['col1', 'col2', 'col3'], data=[[1.0, 2.0, 3.0], [1.0, 4.0, 3.0], [1.0, 6.0, 3.0]])
-return_val = requests.post('http://single-val-test-api.herokuapp.com/extractsinglevalues', json=df.to_json()).json()
+return_val = requests.post('http://single-val-test-api.herokuapp.com/extractsinglevalues', json=df.to_json())
 print(return_val)
