@@ -15,7 +15,7 @@ def single_val_cols_to_dict(df_json):
         if df[col].nunique(dropna=(not count_na)) == 1:  # if count_na=True do not dropna from nunique, see docstring
             first_valid_idx = df[col].first_valid_index()  # keep from having to call first_valid_index twice
             if first_valid_idx is not None:
-                single_value_dict[col] = df.at[first_valid_idx, col]
+                single_value_dict[col] = str(df.at[first_valid_idx, col])
             else:
                 single_value_dict[col] = NaN
 
