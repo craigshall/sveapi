@@ -19,7 +19,7 @@ def single_val_cols_to_dict(df_json):
             else:
                 single_value_dict[col] = NaN
 
-    if not bool(single_value_dict.values)
+    if not single_value_dict.values:
         single_value_dict = {'no_single_vals': df.cols}
     return json.dumps(single_value_dict)
 
