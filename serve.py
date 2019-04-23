@@ -1,6 +1,6 @@
 # import pickle
- import pandas as pd
- import json
+import pandas as pd
+import json
 
 
 def single_val_cols_to_dict(df_json):
@@ -23,11 +23,12 @@ def single_val_cols_to_dict(df_json):
         single_value_dict = {'no_single_vals': list(df.columns.values)}
     return json.dumps(single_value_dict)
 
+
 def run_single_val(json_df):
     # read in a processor from our pickled file. Don't forget to
     # include "rb", which lets us _r_ead a _b_inary file.
-    #pickle_single_vals = pickle.load(open("single_vals.pkl", "rb"))
+    # pickle_single_vals = pickle.load(open("single_vals.pkl", "rb"))
 
-    #return pickle_single_vals(json_df)
+    # return pickle_single_vals(json_df)
     return single_val_cols_to_dict(json_df)
 
